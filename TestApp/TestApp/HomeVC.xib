@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +20,7 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCF-Tn-dM2">
                     <rect key="frame" x="20.5" y="423.5" width="373" height="59"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="59" id="Jow-28-XBG"/>
                     </constraints>
@@ -31,10 +32,28 @@
                         <action selector="actionGenerateCrash:" destination="-1" eventType="touchUpInside" id="QRi-YV-Ut0"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qO8-rn-PkH">
+                    <rect key="frame" x="20.5" y="505" width="373" height="59"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="59" id="eN6-f1-ZkI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="Build Version">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="actionGetBuildVersion:" destination="-1" eventType="touchUpInside" id="s6e-dN-UaJ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="qO8-rn-PkH" firstAttribute="top" secondItem="NCF-Tn-dM2" secondAttribute="bottom" constant="22.5" id="8ov-p5-dTb"/>
+                <constraint firstItem="qO8-rn-PkH" firstAttribute="height" secondItem="NCF-Tn-dM2" secondAttribute="height" id="By5-Az-rhN"/>
+                <constraint firstItem="qO8-rn-PkH" firstAttribute="leading" secondItem="NCF-Tn-dM2" secondAttribute="leading" id="CxT-mL-zrR"/>
                 <constraint firstItem="NCF-Tn-dM2" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="NxX-pI-AJL"/>
+                <constraint firstItem="qO8-rn-PkH" firstAttribute="trailing" secondItem="NCF-Tn-dM2" secondAttribute="trailing" id="QJ9-Co-fpx"/>
                 <constraint firstItem="NCF-Tn-dM2" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Rjy-De-fTZ"/>
                 <constraint firstItem="NCF-Tn-dM2" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.9:1" id="upD-Ln-p9Z"/>
             </constraints>
