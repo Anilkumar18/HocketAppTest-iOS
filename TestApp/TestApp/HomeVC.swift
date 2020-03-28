@@ -14,7 +14,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "HockeyApp Test"
-        //testtesttets
+        //testtesttetstest
         // Do any additional setup after loading the view.
     }
 
